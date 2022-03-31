@@ -117,11 +117,6 @@ else
 	openssl enc -d -aes-256-cbc -pbkdf2 -in $ciphertxt -out $5 -k symmetric.key	
 	rm symmetric.key
 	rm $ciphertxt
-	# Note - I am getting autograder errors, but when I run the same commands from my terminal I am not getting errors and 
-	# the correct files are being created (with some extra output to stdout but the encryption/decryption is working). I 
-	# am guessing this is due to the absolute vs relative path problem outlined in piazza, and I have tried many different things
-	# but cannot seem to get it to work, so I am submitting this and hoping to get some points back that I got off from the autograder
-	# Thank you!
 fi
 
 
